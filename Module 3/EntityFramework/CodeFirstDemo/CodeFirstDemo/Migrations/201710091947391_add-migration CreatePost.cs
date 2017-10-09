@@ -16,7 +16,7 @@ namespace CodeFirstDemo.Migrations
                         Title = c.String(),
                         Body = c.String(),
                     })
-                .PrimaryKey(t => t.Id);
+                .PrimaryKey(t => t.Id);//EF uses convention over configuration - based on name and type of proerties it can figure out how the DB should look like e.g. ID = primary key and = identity column
             
         }
         
