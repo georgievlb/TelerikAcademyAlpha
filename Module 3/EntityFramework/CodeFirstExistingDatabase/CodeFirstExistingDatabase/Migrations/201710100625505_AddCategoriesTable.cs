@@ -11,10 +11,12 @@ namespace CodeFirstExistingDatabase.Migrations
                 "dbo.Categories",
                 c => new
                     {
-                        Id = c.Int(nullable: false, identity: true),
+                        Id = c.Int(nullable: false, identity: false),
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
+            Sql("INSERT INTO Categories VALUES (1, 'Web Development')");
+            Sql("INSERT INTO Categories VALUES (2, 'Programming Languages')");
             
         }
         
