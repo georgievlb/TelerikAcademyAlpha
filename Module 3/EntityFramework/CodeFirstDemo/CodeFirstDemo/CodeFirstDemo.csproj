@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201710091947391_add-migration CreatePost.Designer.cs">
       <DependentUpon>201710091947391_add-migration CreatePost.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710101225108_CreateComment.cs" />
+    <Compile Include="Migrations\201710101225108_CreateComment.Designer.cs">
+      <DependentUpon>201710101225108_CreateComment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +68,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710091947391_add-migration CreatePost.resx">
       <DependentUpon>201710091947391_add-migration CreatePost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710101225108_CreateComment.resx">
+      <DependentUpon>201710101225108_CreateComment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -11,9 +11,19 @@ namespace CodeFirstDemo
         public string Body { get; set; }
     }
 
+    public class Comment
+    {
+        public int Id { get; set; }
+        public DateTime DatePublished { get; set; }
+        public string Title { get; set; }
+        public Post post { get; set; }
+        public string Body { get; set; }
+    }
+
     public class BlogDbContext: DbContext   //abstraction over to data base
     {
         public DbSet<Post> Posts { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 
     class Program

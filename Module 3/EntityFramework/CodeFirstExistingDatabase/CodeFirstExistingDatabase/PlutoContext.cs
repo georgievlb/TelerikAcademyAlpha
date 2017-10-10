@@ -14,7 +14,7 @@ namespace CodeFirstExistingDatabase
 
         public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<Author> Authors { get; set; }
-        public virtual DbSet<Courses> Courses { get; set; }
+        public virtual DbSet<Course> Courses { get; set; }
         public virtual DbSet<Tag> Tags { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
 
@@ -25,7 +25,7 @@ namespace CodeFirstExistingDatabase
                 .WithOptional(e => e.Author)
                 .HasForeignKey(e => e.author_Id);
 
-            modelBuilder.Entity<Courses>()
+            modelBuilder.Entity<Course>()
                 .HasMany(e => e.Tags)
                 .WithMany(e => e.Courses)
                 .Map(m => m.ToTable("TagCourses").MapLeftKey("Course_Id"));

@@ -7,16 +7,16 @@ namespace CodeFirstExistingDatabase
     using System.Data.Entity.Spatial;
 
     [Table("Courses")]
-    public partial class Courses
+    public partial class Course
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Courses()
+        public Course()
         {
             Tags = new HashSet<Tag>();
         }
 
         public int Id { get; set; }
-
+       
         public string Title { get; set; }
 
         public string Description { get; set; }
