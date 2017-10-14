@@ -9,11 +9,14 @@ namespace CodeFirstPlutoGreenField.Migrations
     {
         public Configuration()
         {
+            //automatic migration is going away in the next version of EntityFramework
             AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(CodeFirstPlutoGreenField.PlutoContext context)
         {
+
+
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 

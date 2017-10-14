@@ -1,6 +1,8 @@
 ﻿using CodeFirstLiveDemo.Data;
 using System.Linq;
 using System;
+using CodeFirstLiveDemo.Models;
+using System.Data.Entity.Validation;
 
 namespace CodeFirstLiveDemo.StartUp
 {
@@ -13,8 +15,24 @@ namespace CodeFirstLiveDemo.StartUp
             //the second approach is ctx.Database.CreateIfNotExist();
             //the DB is created according to the ctx
             //db.Students.Add();
+            try
+            {
+                ctx.Students.Add(new Student()
+                {
+                    FirstName = "Ivan",
+                    LastName = "Atanasov",
+                });
 
-            Console.WriteLine(ctx.Students.Count());
+                ctx.SaveChanges();
+            }
+            catch (DbEntityValidationException ex)//lookup how to see the inner exception
+            {
+
+                throw;
+            }
+
+            Console.WriteLine(ctx.Students.Count());   
+            
         }
     }
 }

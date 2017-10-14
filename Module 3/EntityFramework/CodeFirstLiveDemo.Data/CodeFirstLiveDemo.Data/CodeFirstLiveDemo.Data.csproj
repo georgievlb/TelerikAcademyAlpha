@@ -47,14 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201710101943059_InitialCreate.cs" />
-    <Compile Include="Migrations\201710101943059_InitialCreate.Designer.cs">
-      <DependentUpon>201710101943059_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201710102042087_AddedMarksAndCourses.cs" />
-    <Compile Include="Migrations\201710102042087_AddedMarksAndCourses.Designer.cs">
-      <DependentUpon>201710102042087_AddedMarksAndCourses.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentSystemContext.cs" />
@@ -68,14 +60,6 @@
       <Project>{E620374E-B8F1-49A3-BBB6-1C72B1E4508F}</Project>
       <Name>CodeFirstLiveDemo.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201710101943059_InitialCreate.resx">
-      <DependentUpon>201710101943059_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710102042087_AddedMarksAndCourses.resx">
-      <DependentUpon>201710102042087_AddedMarksAndCourses.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,6 +16,8 @@ namespace CodeFirstLiveDemo.Data.Migrations
 
         protected override void Seed(CodeFirstLiveDemo.Data.StudentSystemContext context)
         {
+            //този метод е закоментиран защото не е хубаво да се ползва. Няма 
+            //single responsibility
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
