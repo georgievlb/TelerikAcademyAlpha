@@ -1,4 +1,5 @@
-﻿using Ninject;
+﻿using HelloWorldUsingIoC.Ninject;
+using Ninject;
 
 namespace HelloWorldUsingIoC
 {
@@ -7,9 +8,9 @@ namespace HelloWorldUsingIoC
         static void Main(string[] args)
         {
             //container DI
-            HelloWorldModule 
+             
             var kernel = new StandardKernel(new HelloWorldModule()); //our container with a configuration place in the module
-            var salutation = kernel.Get<Salutation>();
+            var salutation = kernel.Get<ISalutation>();
             salutation.Exclaim();
         }
     }

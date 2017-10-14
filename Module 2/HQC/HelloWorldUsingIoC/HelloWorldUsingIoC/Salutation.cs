@@ -2,7 +2,7 @@
 
 namespace HelloWorldUsingIoC
 {
-    internal class Salutation
+    internal class Salutation : ISalutation
     {
         private readonly IMessageWriter writer;
 
