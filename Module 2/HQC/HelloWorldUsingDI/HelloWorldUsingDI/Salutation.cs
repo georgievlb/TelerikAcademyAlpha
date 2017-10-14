@@ -2,7 +2,7 @@
 
 namespace HelloWorldUsingDI
 {
-    public class Salutation : ISalutation
+    public class Salutation
     {
         private readonly IMessageWriter writer;     //readonly to prevent changes; doesn't have a property because we don't need it to change
 
