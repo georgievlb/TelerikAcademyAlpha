@@ -46,6 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleMessageWriter.cs" />
+    <Compile Include="DataBaseWriter.cs" />
+    <Compile Include="FileMessageWriter.cs" />
     <Compile Include="IMessageWriter.cs" />
     <Compile Include="ISalutation.cs" />
     <Compile Include="Ninject\HelloWorldModule.cs" />

@@ -12,9 +12,22 @@ namespace HelloWorldUsingIoC.Ninject
     {
         public override void Load()
         {
+            //if we need more than one binding we must name them
+            this.Bind<IMessageWriter>()
+                .To<ConsoleMessageWriter>()
+                .Named("ConsoleWriter");
 
-            this.Bind<IMessageWriter>().To<ConsoleMessageWriter>();
-            this.Bind<ISalutation>().To<Salutation>();
+            this.Bind<IMessageWriter>()
+                .To<FileMessageWriter>()
+                .Named("FileWriter");
+
+            this.Bind<IMessageWriter>()
+                .To<DataBaseWriter>()
+                .Named("DatabaseWriter");
+
+            this.Bind<ISalutation>()
+                .To<Salutation>()
+                .WithConstructorArgument(this.Kernel.Get<IMessageWriter>("ConsoleWriter"));
         }
     }
 }

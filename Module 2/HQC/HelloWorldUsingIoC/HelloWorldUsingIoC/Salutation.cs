@@ -13,7 +13,7 @@ namespace HelloWorldUsingIoC
 
         public void Exclaim()
         {
-            this.writer.Write("Hello DI");
+            this.writer.Write("Hello World DI style!");
         }
     }
 }
