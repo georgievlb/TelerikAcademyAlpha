@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.MergingAndSquashing", "02.MergingAndSquashing\02.MergingAndSquashing.csproj", "{46FE38F7-6109-4E40-8D0A-0CBAE97A181D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.Numbers", "01.Numbers\01.Numbers.csproj", "{EBE06467-F8A4-4E25-836B-1532F2A62501}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46FE38F7-6109-4E40-8D0A-0CBAE97A181D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46FE38F7-6109-4E40-8D0A-0CBAE97A181D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46FE38F7-6109-4E40-8D0A-0CBAE97A181D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46FE38F7-6109-4E40-8D0A-0CBAE97A181D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE06467-F8A4-4E25-836B-1532F2A62501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE06467-F8A4-4E25-836B-1532F2A62501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE06467-F8A4-4E25-836B-1532F2A62501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE06467-F8A4-4E25-836B-1532F2A62501}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2ECB6689-CCC1-45AB-AD7F-92B2A458BB2B}
+	EndGlobalSection
+EndGlobal
