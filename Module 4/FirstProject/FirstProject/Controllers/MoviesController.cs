@@ -1,4 +1,5 @@
 ﻿using FirstProject.Models;
+using FirstProject.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,16 +36,34 @@ namespace FirstProject.Controllers
         {
             Movie movie = new Movie() { Name = "Shrek!" };
 
-            return View(movie); //View method is inherited from the Controller class. 
+            var customers = new List<Customer>
+            {
+                new Customer{ Name = "Customer 1"},
+                new Customer{ Name = "Customer 2"}
+            };
+
+            var viewModel = new RandomMovieViewModel
+            {
+                Movie = movie,
+                Customers = customers
+            };
+
+            //ViewData["Movie"] = movie; //every controller has a property called ViewData, which is of type ViewDataDictionary
+
+            return View(viewModel); //View() method is inherited from the Controller class. 
                                 //It is just a helper method.
 
-                                //action results are the output of our actions()
-                                //action parameters are the inputs of our actions()
+            //action results are the output of our actions()
+            //action parameters are the inputs of our actions()
 
-                                //ASP.NET maps request data to parameters over actions
-                                //we can also have optional parameters in our actions.
-                                //string type in C# is a reference type and it's nullable
+            //ASP.NET maps request data to parameters over actions
+            //we can also have optional parameters in our actions.
+            //string type in C# is a reference type and it's nullable
+
+
         }
+
+        /*
 
         public ActionResult Edit(int id)
         {
@@ -82,5 +101,8 @@ namespace FirstProject.Controllers
         {
             return Content($"{year} / {month}");//we can apply constraints to our routes (this happens in RouteConfig)
         }
+
+
+    */
     }
 }
