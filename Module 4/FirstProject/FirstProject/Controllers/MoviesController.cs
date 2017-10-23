@@ -75,5 +75,12 @@ namespace FirstProject.Controllers
             //in this case we cannot embed these parameters(pageIndex and sortBy) in the URL,
             //because that would require a custom route that includes two parameters
         }
+
+
+        [Route("movies/released/{year}/{month:regex(\\d{2}):range(1, 12)}")]
+        public ActionResult ByReleaseDate(int year, int month)
+        {
+            return Content($"{year} / {month}");//we can apply constraints to our routes (this happens in RouteConfig)
+        }
     }
 }

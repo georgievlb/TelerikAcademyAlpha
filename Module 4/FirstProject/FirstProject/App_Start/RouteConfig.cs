@@ -13,6 +13,25 @@ namespace FirstProject
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();     //Alternatively, we can use Attribute Routing instead of rutes.MapRoute()
+
+
+            /*
+            routes.MapRoute(//start with most specific route and end with most generic route; they must also be convention-based
+                "MoviesByReleaseDate", //first parameter of the custom route is its name
+                "movies/released/{year}/{month}",//second parameter is the URL pattern
+                 new { controller = "Movies", action = "ByReleaseDate"},//third parameter is to specify defaults
+            //(we use an anonymous object for that - it includes the name of the controller as well as the name of the action)
+            //after that, we need to create that action (in this case the action is "ByReleaseDate" -
+            //we do that in the MoviesController
+
+            //in order to create year and month constraints, we need to supply another argument to our MapRoute() method
+            //by using an anonymous object where we can use RegEx to apply constraints
+                 new { year = @"\d{4}", month = @"\d{2}"}
+                 );
+
+            */
+            
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",//default parameter name is called id
