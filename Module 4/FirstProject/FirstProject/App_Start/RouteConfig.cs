@@ -11,9 +11,11 @@ namespace FirstProject
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+            routes.LowercaseUrls = true;    //one of the first things to add when starting a new project
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapMvcAttributeRoutes();     //Alternatively, we can use Attribute Routing instead of rutes.MapRoute()
+            routes.MapMvcAttributeRoutes();     //Alternatively, we can use Attribute Routing instead of routes.MapRoute()
 
 
             /*
@@ -39,7 +41,9 @@ namespace FirstProject
                                                   //identified as id NOT movieId or anything else
                                                   //this is how ASP.NET maps request data to parameters over actions -
                                                   //it uses strict naming
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }//ако някой не въведе котролер, ще ползваме home,
+                                                                                                    //ако не въведе action ще ползваме index, 
+                                                                                                    //ако не въведем id, то си е optional
             );
         }
     }
