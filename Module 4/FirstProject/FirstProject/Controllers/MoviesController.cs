@@ -13,7 +13,18 @@ namespace FirstProject.Controllers
         [Route("movies")]
         public ActionResult Index()
         {
-            return this.View();
+            var moviesList = GetMoviesList();
+
+            return this.View(moviesList);
+        }
+
+        private IEnumerable<Movie> GetMoviesList()
+        {
+            return new List<Movie>
+            {
+                new Movie { Id = 1, Name = "Interstellar"},
+                new Movie { Id = 2, Name = "Inception"}
+            };
         }
 
         // GET: /Movies/Random
