@@ -11,7 +11,7 @@ namespace FirstProject.Controllers
     public class MoviesController : Controller
     {
         [Route("movies")]
-        public ActionResult Movies()
+        public ActionResult Index()
         {
             return this.View();
         }
