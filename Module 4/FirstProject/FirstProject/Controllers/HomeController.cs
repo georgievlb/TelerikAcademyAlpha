@@ -13,18 +13,24 @@ namespace FirstProject.Controllers
             return View();
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+        //public ActionResult Customers()
+        //{
+        //    ViewBag.Message = "List of customers goes here.";
 
-            return View();
-        }
+        //    return View();
+        //}
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+        //public ActionResult Movies()
+        //{
+        //    ViewBag.Message = "List of movies goes here.";
+        //    return View();
+        //}
 
-            return View();
-        }
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Message = "Your contact page.";
+
+        //    return View();
+        //}
     }
 }

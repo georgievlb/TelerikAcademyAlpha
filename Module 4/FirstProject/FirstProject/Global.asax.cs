@@ -16,6 +16,9 @@ namespace FirstProject
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            ViewEngines.Engines.Clear();                    //the second very important thing to do when starting a
+            ViewEngines.Engines.Add(new RazorViewEngine()); //new ASP.NET MVC project
         }
     }
 }

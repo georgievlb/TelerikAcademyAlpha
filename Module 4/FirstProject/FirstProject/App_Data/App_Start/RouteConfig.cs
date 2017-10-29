@@ -33,7 +33,7 @@ namespace FirstProject
                  );
 
             */
-            
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",//default parameter name is called id

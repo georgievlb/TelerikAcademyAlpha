@@ -10,6 +10,12 @@ namespace FirstProject.Controllers
 {
     public class MoviesController : Controller
     {
+        [Route("movies")]
+        public ActionResult Movies()
+        {
+            return this.View();
+        }
+
         // GET: /Movies/Random
         public ViewResult Random() //will be called when we go to /movies/random
                                    //Our random() action returns an action result. This action result is the base class

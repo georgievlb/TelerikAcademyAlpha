@@ -65,7 +65,7 @@ namespace FirstProject.Controllers
         // POST: /Account/Login
         [HttpPost]
         [AllowAnonymous]
-        [ValidateAntiForgeryToken]
+        [ValidateAntiForgeryToken] //не искаме някои от някъде си да се логва вместо нас. Слагат се такива tokens. 
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
             if (!ModelState.IsValid)
