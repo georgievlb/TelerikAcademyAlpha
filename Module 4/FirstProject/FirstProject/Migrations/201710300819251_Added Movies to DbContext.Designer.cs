@@ -7,13 +7,13 @@ namespace FirstProject.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class AddedMoviestoDbContext : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedMoviestoDbContext));
         
         string IMigrationMetadata.Id
         {
-            get { return "201710251249377_InitialCreate"; }
+            get { return "201710300819251_Added Movies to DbContext"; }
         }
         
         string IMigrationMetadata.Source

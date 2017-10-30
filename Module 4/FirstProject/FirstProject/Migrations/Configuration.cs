@@ -10,7 +10,6 @@ namespace FirstProject.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "FirstProject.Models.ApplicationDbContext";
         }
 
         protected override void Seed(FirstProject.Models.ApplicationDbContext context)
