@@ -14,16 +14,20 @@
 else
 {
     <table class="table table-bordered table-hover">
-        @*<thead>
+        <thead>
             <tr>
                 <th>Customers:</th>
+                <th>Membership Type</th>
             </tr>
-        </thead>*@
+        </thead>
         <tbody>
             @foreach (var customer in Model)
             {
                 <tr>
                     <td>@Html.ActionLink(customer.Name, "Details", "Customers", new { id = customer.Id }, null)</td>
+                    <td>@customer.MembershipType.Name</td>
+                    @*<td>@customer.MembershipType.DiscountRate%</td>  //Need to load customers and membership type together - this is called Eager Loading*@
+                    @* Razor view engine is smart enough to know that the % above is plain text while the .DiscountRate is a C# property*@
                 </tr>
             }
         </tbody>

@@ -228,15 +228,90 @@
     <Compile Include="Migrations\201710300819251_Added Movies to DbContext.Designer.cs">
       <DependentUpon>201710300819251_Added Movies to DbContext.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710300824469_AddIsSubscribedToCustomer.cs" />
+    <Compile Include="Migrations\201710300824469_AddIsSubscribedToCustomer.Designer.cs">
+      <DependentUpon>201710300824469_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710300829311_AddMembershipType.cs" />
+    <Compile Include="Migrations\201710300829311_AddMembershipType.Designer.cs">
+      <DependentUpon>201710300829311_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710300832213_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201710300832213_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201710300832213_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710300840128_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201710300840128_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201710300840128_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710310807539_Added MembershipTypeId.cs" />
+    <Compile Include="Migrations\201710310807539_Added MembershipTypeId.Designer.cs">
+      <DependentUpon>201710310807539_Added MembershipTypeId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710310813052_Added NamePropertyToMembershipType.cs" />
+    <Compile Include="Migrations\201710310813052_Added NamePropertyToMembershipType.Designer.cs">
+      <DependentUpon>201710310813052_Added NamePropertyToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710310818054_UpdatedMembershipTypeName.cs" />
+    <Compile Include="Migrations\201710310818054_UpdatedMembershipTypeName.Designer.cs">
+      <DependentUpon>201710310818054_UpdatedMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710310900487_AddedBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201710310900487_AddedBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201710310900487_AddedBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710310917395_AddedRequiredAttributeToMembershipTypeName.cs" />
+    <Compile Include="Migrations\201710310917395_AddedRequiredAttributeToMembershipTypeName.Designer.cs">
+      <DependentUpon>201710310917395_AddedRequiredAttributeToMembershipTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710310924354_Changed NameOfMembershipType to Name.cs" />
+    <Compile Include="Migrations\201710310924354_Changed NameOfMembershipType to Name.Designer.cs">
+      <DependentUpon>201710310924354_Changed NameOfMembershipType to Name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711020634101_Movie Properties.cs" />
+    <Compile Include="Migrations\201711020634101_Movie Properties.Designer.cs">
+      <DependentUpon>201711020634101_Movie Properties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711020635358_Required Attribute for Movie.cs" />
+    <Compile Include="Migrations\201711020635358_Required Attribute for Movie.Designer.cs">
+      <DependentUpon>201711020635358_Required Attribute for Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711020643420_Added Genre.cs" />
+    <Compile Include="Migrations\201711020643420_Added Genre.Designer.cs">
+      <DependentUpon>201711020643420_Added Genre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711020648064_Populate Genres.cs" />
+    <Compile Include="Migrations\201711020648064_Populate Genres.Designer.cs">
+      <DependentUpon>201711020648064_Populate Genres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711020811149_Changed Id type to int.cs" />
+    <Compile Include="Migrations\201711020811149_Changed Id type to int.Designer.cs">
+      <DependentUpon>201711020811149_Changed Id type to int.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711020835000_Added membershiptype key.cs" />
+    <Compile Include="Migrations\201711020835000_Added membershiptype key.Designer.cs">
+      <DependentUpon>201711020835000_Added membershiptype key.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711021350066_renamed IsSubscribed.cs" />
+    <Compile Include="Migrations\201711021350066_renamed IsSubscribed.Designer.cs">
+      <DependentUpon>201711021350066_renamed IsSubscribed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711021352564_membership type edit.cs" />
+    <Compile Include="Migrations\201711021352564_membership type edit.Designer.cs">
+      <DependentUpon>201711021352564_membership type edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerDetailsViewModel.cs" />
+    <Compile Include="ViewModels\NewCustomerViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -263,7 +338,9 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -301,6 +378,8 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -324,6 +403,60 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710300819251_Added Movies to DbContext.resx">
       <DependentUpon>201710300819251_Added Movies to DbContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710300824469_AddIsSubscribedToCustomer.resx">
+      <DependentUpon>201710300824469_AddIsSubscribedToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710300829311_AddMembershipType.resx">
+      <DependentUpon>201710300829311_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710300832213_PopulateMembershipTypes.resx">
+      <DependentUpon>201710300832213_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710300840128_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201710300840128_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710310807539_Added MembershipTypeId.resx">
+      <DependentUpon>201710310807539_Added MembershipTypeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710310813052_Added NamePropertyToMembershipType.resx">
+      <DependentUpon>201710310813052_Added NamePropertyToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710310818054_UpdatedMembershipTypeName.resx">
+      <DependentUpon>201710310818054_UpdatedMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710310900487_AddedBirthdateToCustomer.resx">
+      <DependentUpon>201710310900487_AddedBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710310917395_AddedRequiredAttributeToMembershipTypeName.resx">
+      <DependentUpon>201710310917395_AddedRequiredAttributeToMembershipTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710310924354_Changed NameOfMembershipType to Name.resx">
+      <DependentUpon>201710310924354_Changed NameOfMembershipType to Name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711020634101_Movie Properties.resx">
+      <DependentUpon>201711020634101_Movie Properties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711020635358_Required Attribute for Movie.resx">
+      <DependentUpon>201711020635358_Required Attribute for Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711020643420_Added Genre.resx">
+      <DependentUpon>201711020643420_Added Genre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711020648064_Populate Genres.resx">
+      <DependentUpon>201711020648064_Populate Genres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711020811149_Changed Id type to int.resx">
+      <DependentUpon>201711020811149_Changed Id type to int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711020835000_Added membershiptype key.resx">
+      <DependentUpon>201711020835000_Added membershiptype key.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711021350066_renamed IsSubscribed.resx">
+      <DependentUpon>201711021350066_renamed IsSubscribed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711021352564_membership type edit.resx">
+      <DependentUpon>201711021352564_membership type edit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -5,26 +5,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace FirstProject.Controllers
 {
     public class MoviesController : Controller
     {
-        [Route("movies")]
-        public ActionResult Index()
-        {
-            var moviesList = GetMoviesList();
 
-            return this.View(moviesList);
+        private ApplicationDbContext context;
+
+        public MoviesController()
+        {
+            context = new ApplicationDbContext();
         }
 
-        private IEnumerable<Movie> GetMoviesList()
+        protected override void Dispose(bool disposing)
         {
-            return new List<Movie>
-            {
-                new Movie { Id = 1, Name = "Interstellar"},
-                new Movie { Id = 2, Name = "Inception"}
-            };
+            context.Dispose();
+        }
+
+        [Route("movies")]
+        public ViewResult Index()
+        {
+            var movies = context.Movies.Include(m => m.Genre).ToList();
+
+            return View(movies);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var movie = context.Movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+
+            if (movie == null)
+                return HttpNotFound();
+
+            return View(movie);
+
         }
 
         // GET: /Movies/Random

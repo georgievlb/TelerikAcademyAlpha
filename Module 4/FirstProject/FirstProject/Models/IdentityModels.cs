@@ -24,6 +24,8 @@ namespace FirstProject.Models
 
         public DbSet<Movie> Movies { get; set; }
 
+        public DbSet<MembershipType> MembershipTypes { get; set; }
+
         public ApplicationDbContext()   //Gateway to database
             : base("FirstProjectDB", throwIfV1Schema: false)
         {
