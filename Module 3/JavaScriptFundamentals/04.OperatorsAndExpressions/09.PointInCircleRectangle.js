@@ -20,6 +20,6 @@ function PointCR (array){
         return "outside circle inside rectangle"
     }
     else {
-        return "outside circle outisde rectangle"
+        return "outside circle outside rectangle"
     }
 }
