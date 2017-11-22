@@ -159,4 +159,3 @@ function NumberAsWords(array) {
     }
 
 }
-console.log(NumberAsWords(["201"]));

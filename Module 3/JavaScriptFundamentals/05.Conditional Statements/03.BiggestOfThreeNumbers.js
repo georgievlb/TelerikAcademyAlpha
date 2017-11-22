@@ -1,4 +1,4 @@
-function FindSign(array) {
+function FindBiggest(array) {
     var first = parseFloat(array[0]);
     var second = parseFloat(array[1]);
     var third = parseFloat(array[2]);
