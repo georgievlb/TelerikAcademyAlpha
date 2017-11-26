@@ -26,10 +26,10 @@ function LexicographicalComparison(array) {
     var result = [];
 
     for (var i = 0; i < length; i++) {
-        // if (charArray2[i] === undefined) {
-        //     break;
-        // }
-
+         if (charArray2[i] === undefined && charArray1.length > charArray2.length) {
+             result = ">";
+             break;
+         }
         if (charArray1[i] < charArray2[i]) {
             result[0] = "<";
         }
