@@ -18,8 +18,8 @@ function LargestOfThree(input) {
 
     var temp = GetMax(a, b);
     var result = GetMax(temp, c);
-    console.log("input = " + input);
-    console.log("parsed input = " + parsedInput);
+    //console.log("input = " + input);
+    //console.log("parsed input = " + parsedInput);
     return result;
 }
 console.log(LargestOfThree([8, 3, 6]));
