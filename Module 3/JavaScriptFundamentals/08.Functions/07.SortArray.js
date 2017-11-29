@@ -1,4 +1,4 @@
-function LargerThanNeighbours(input) {
+function arraySort(input) {
     var arraySize = +input[0];
     var arrayToSort = input[1].split(' ');
 
@@ -27,5 +27,6 @@ function LargerThanNeighbours(input) {
     var result = selectionSort(arrayToSort);
     return result.join(' ');
 }
+
 
 //sorting negative numbers should be done after they are parsed as numbers!
